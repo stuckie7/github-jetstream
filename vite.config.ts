@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
+    base: '/github-jetstream/'
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
